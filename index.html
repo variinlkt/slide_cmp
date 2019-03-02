@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo</title>
+    <style>
+        body,
+        div,
+        ul,
+        li{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style:none;
+        }
+        .slide_container{
+            width: 100%;
+            overflow: hidden;
+        }
+        .slide_list{
+            position: relative;
+
+        }
+        .slide_item{
+            width: 100%;
+            background: cadetblue;
+            margin: 0 10px;
+            border-radius: 20px;
+            height: 200px;
+        }
+        .slide_footer{
+            position: absolute;
+            bottom: 10px;
+            height: 2px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .slide_footer_item{
+            background: #000;
+            width: 20px;
+            height: 100%;
+        }
+        .slide_footer_item--active{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="slide_container">
+        <ul class="slide_list">
+            <li class="slide_item">111</li>
+            <li class="slide_item">222</li>
+            <li class="slide_item">333</li>
+
+        </ul>
+        <ul class="slide_footer">
+            <li class="slide_footer_item slide_footer_item--active"></li>
+            <li class="slide_footer_item"></li>
+            <li class="slide_footer_item"></li>
+        </ul>
+    </div>
+    <script src="https://cdn.bootcss.com/stately.js/2.0.0/Stately.min.js"></script>
+</body>
+</html>
