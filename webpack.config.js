@@ -33,7 +33,8 @@ module.exports = {
       },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: "./public/index.html",
+      filename: __dirname + '/index.html'
     }),
     // new webpack.optimize.ModuleConcatenationPlugin()
   ]
