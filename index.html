@@ -19,9 +19,11 @@
         .slide_container{
             width: 100%;
             overflow: hidden;
+            height: 200px;
         }
         .slide_list{
             position: relative;
+            height: 100%;
 
         }
         .slide_item{
@@ -29,7 +31,7 @@
             background: cadetblue;
             margin: 0 10px;
             border-radius: 20px;
-            height: 200px;
+            height: 100%;
         }
         .slide_footer{
             position: absolute;
@@ -47,10 +49,57 @@
         .slide_footer_item--active{
             background: red;
         }
+        #slide_container4 .slide_item{
+            margin: 0;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
-    <div id="slide_container">
+    <h2>无限横向滑动</h2>
+    <div id="slide_container1" class="slide_container">
+        <ul class="slide_list">
+            <li class="slide_item">111</li>
+            <li class="slide_item">222</li>
+            <li class="slide_item">333</li>
+
+        </ul>
+        <ul class="slide_footer">
+            <li class="slide_footer_item slide_footer_item--active"></li>
+            <li class="slide_footer_item"></li>
+            <li class="slide_footer_item"></li>
+        </ul>
+    </div>
+    <h2>有限横向滑动</h2>
+    <div id="slide_container2" class="slide_container">
+        <ul class="slide_list">
+            <li class="slide_item">111</li>
+            <li class="slide_item">222</li>
+            <li class="slide_item">333</li>
+
+        </ul>
+        <ul class="slide_footer">
+            <li class="slide_footer_item slide_footer_item--active"></li>
+            <li class="slide_footer_item"></li>
+            <li class="slide_footer_item"></li>
+        </ul>
+    </div>
+    <h2>自动轮播</h2>
+    <div id="slide_container3" class="slide_container">
+        <ul class="slide_list">
+            <li class="slide_item">111</li>
+            <li class="slide_item">222</li>
+            <li class="slide_item">333</li>
+
+        </ul>
+        <ul class="slide_footer">
+            <li class="slide_footer_item slide_footer_item--active"></li>
+            <li class="slide_footer_item"></li>
+            <li class="slide_footer_item"></li>
+        </ul>
+    </div>
+    <h2>竖向自动滚动</h2>
+    <div id="slide_container4" class="slide_container">
         <ul class="slide_list">
             <li class="slide_item">111</li>
             <li class="slide_item">222</li>
